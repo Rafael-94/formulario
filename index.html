@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>
+      validaciones js
+    </h1>
+  </header>
+
+  <section>
+    <article>
+      <h2>
+        campos para validar
+      </h2>
+      <p>
+        <span>Ficha:</span> se puede ingrear cualquier caracter
+      </p>
+      <p>
+        <span>Nombre:</span> solo se puede ingresar letras
+      </p>
+      <p>
+        <span>Apellidos:</span> solo se puede ingresar letras
+      </p>
+      <p>
+        <span>Correo:</span> solo se puede ingresar un corro valido
+      </p>
+      <p>
+        <span>Telefono:</span> solo se pueden ingresar numeros
+      </p>
+      <p>
+        <span>Genero:</span> solo se puede seleccionar un genero
+      </p>
+      <p>
+        <span>Ciudad:</span> solo se puede seleccionar una ciudad
+      </p>
+      <p>
+        <span>Habilidades:</span> se tiene que seleccionar como minimo 3 habilidades
+      </p>
+
+    </article>
+
+    <article>
+
+      <form id="formulario" action="#" method="POST">
+        <div>
+          <label for="ficha">Número de Ficha:</label>
+          <input type="text" id="ficha" name="ficha" required>
+        </div>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z]+">
+        </div>
+        <div>
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-z]+">
+        </div>
+        <div>
+          <label for="correo">Correo:</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+        <div>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" maxlength="10">
+        </div>
+        <div>
+          <label>
+            Hombre <input type="radio" name="genero" value="1" required>
+          </label>
+          <label>
+            Mujer <input type="radio" name="genero" value="2">
+          </label>
+          <label>
+            Otro <input type="radio" name="genero" value="3">
+          </label>
+        </div>
+        <div>
+          <label for="ciudad">Ciudad:</label>
+          <select id="ciudad" name="ciudad" required>
+            <option value="">Seleccionar</option>
+            <option value="ciudad1">Bucaramanga</option>
+            <option value="ciudad2">Cali</option>
+            <option value="ciudad3">Bogota</option>
+            <option value="ciudad4">Medellin</option>
+          </select>
+        </div>
+        <div>
+          <div>
+            <p>Seleccione minimo 3 habilidaes</p>
+          </div>
+          <div>
+            <input type="checkbox" id="html" value="html">
+            <label for="habilidad1">HTML</label>
+          </div>
+          <div>
+            <input type="checkbox" id="css" value="css">
+            <label for="habilidad2">CSS</label>
+          </div>
+          <div>
+            <input type="checkbox" id="javascript" value="javascript">
+            <label for="habilidad3">Javascript</label>
+          </div>
+          <div>
+            <input type="checkbox" id="php" value="php">
+            <label for="habilidad4">PHP</label>
+          </div>
+          <div>
+            <input type="checkbox" id="java" value="java">
+            <label for="habilidad5">Java</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sql" value="sql">
+            <label for="habilidad6">SQL</label>
+          </div>
+          <div>
+            <input type="checkbox" id="uml" value="uml">
+            <label for="habilidad7">UML</label>
+          </div>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </article>
+  </section>
+
+</body>
+
+</html>
