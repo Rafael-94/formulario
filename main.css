@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.header {
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinear los elementos al principio del contenedor */
+  height: 100vh;
+  position: relative;
+}
+
+.validation-fields {
+  padding: 20px;
+  position: absolute;
+  top: 0; /* Asegura que el artículo de validación esté en la parte superior */
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 60px; /* Agrega espacio entre el artículo de validación y el formulario */
+}
